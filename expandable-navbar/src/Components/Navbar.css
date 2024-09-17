@@ -1,0 +1,85 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 60px;
+  background: linear-gradient(to bottom right, #e0f7e9, #f0f4c3);
+  transition: width 0.3s;
+}
+
+.navbar.open {
+  width: 200px;
+}
+
+.navbar-icon {
+  cursor: pointer;
+  font-size: 27px;
+  padding: 10px;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.navbar-menu.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-menu li {
+  padding: 15px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.locations-dropdown {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.locations-dropdown li {
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.locations-dropdown li a {
+  text-decoration: none;
+  color: black;
+
+  font-size: inherit;
+  font-weight: normal;
+
+  display: block;
+}
+
+.locations-dropdown li a:visited {
+  color: black;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-menu a:visited {
+  color: black;
+}
+
+.navbar-menu li + li {
+  margin-top: 10px;
+}
